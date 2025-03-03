@@ -1,108 +1,84 @@
-# D-Lab Deep Learning in Python Workshop
+# D-Lab [WorkshopName] Workshop
 
 [![DataHub](https://img.shields.io/badge/launch-datahub-blue)](DATAHUB_LINK_HERE)
 [![Binder](https://mybinder.org/badge_logo.svg)](BINDER_LINK_HERE)
-[![Open Slides](https://img.shields.io/badge/open-slides%20-purple)](https://docs.google.com/presentation/d/1NQBDrjkM5ZdabDQFxd5_EqjXA33gt9N0-uI9viVTs6A/edit?usp=sharing)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This repository contains the materials for D-Lab Deep Learning in Python workshop. 
+This repository contains the materials for D-Lab Python Deep Learning workshop. 
 
 ### Prerequisites
-Prior experience with [Python Fundamentals](https://github.com/dlab-berkeley/Python-Fundamentals), [Python Data Visualization](https://github.com/dlab-berkeley/Python-Data-Visualization), [Python Data Wrangling](https://github.com/dlab-berkeley/Python-Data-Wrangling) amd [Python Machine Learning](https://github.com/dlab-berkeley/python-machine-learning) is assumed.
+We recommend attending [Python Fundamentals](https://github.com/dlab-berkeley/Python-Fundamentals) prior to this workshop. [Python Machine Learning](https://github.com/dlab-berkeley/Python-Machine-Learning) is also recommended as a supplemental course.
 
 Check D-Lab's [Learning Pathways](https://dlab-berkeley.github.io/dlab-workshops/python_path.html) to figure out which of our workshops to take!
 
 ## Workshop Goals
 
-In this workshop, we will convey the basics of deep learning in Python using keras on image datasets. You will gain a conceptual grasp of deep learning, work with example code that they can modify, and learn about resources for further study.
+In this workshop, our goals are to recognize the architecture of a vanilla neural network, create our own network, and improve its performance using various standard techniques. We will use Keras (Python) for this workshop.
 
 ## Learning Objectives
 
 After this workshop, you will be able to:
 
-- [LearningObjective1].
-- [LearningObjective2].
-- [LearningObjective3].
+- Recognize the architecture of a vanilla neural network
+- Explain how forward and backward propagation contribute to model learning
+- Create and evaluate the accuracy of a vanilla neural network
+- Design new model architectures to improve performance
 
 This workshop does not cover the following:
 
-- [NotCovered1]. These are covered in [D-LabWorkshopName](URL).
-- [NotCovered2]. These are covered in [D-LabWorkshopName](URL).
+-  CNNs or RNNs. Please let us know if these are of interest for a future workshop.
+- Transformers. An exploratory workshop in LLMs is offered in [LLMs Exploratory Research](https://github.com/dlab-berkeley/LLMs-Exploratory-Research).
 
 
 ## Installation Instructions
 
-Anaconda is a useful package management software that allows you to run Python and Jupyter notebooks very easily. Installing Anaconda is the easiest way to make sure you have all the necessary software to run the materials for this workshop. Complete the following steps:
+We will use Python to go through the workshop materials, we recommend using through the conda or miniconda distribution. Complete the following steps:
 
-1. [Download and install Anaconda (Python 3.8 distribution)](https://www.anaconda.com/products/individual). Click "Download" and then click 64-bit "Graphical Installer" for your current operating system.
+1. Follow the steps to download miniconda [here](https://www.anaconda.com/docs/getting-started/miniconda/main).
+2. Download these workshop materials:
+    * Click the green "Code" button in the top right of the repository information.
+    * Click "Download Zip".
+    * Extract this file to a folder on your computer where you can easily access it (we recommend Desktop).
+3. Optional: if you’re familiar with git, you can instead clone this repository by opening a terminal and entering [GitCloneCommand].
 
-2. Download the [Python-Data-Wrangling workshop materials](https://github.com/dlab-berkeley/Python-Data-Wrangling-Pilot):
+## Is Python not Working on Your Computer?
 
-* Click the green "Code" button in the top right of the repository information.
-* Click "Download Zip".
-* Extract this file to a folder on your computer where you can easily access it (we recommend Desktop).
+If you do not have Python installed and the materials loaded on your
+workshop by the time it starts, we *strongly* recommend using the UC Berkeley
+Datahub to run the materials for these lessons. You can access the DataHub by
+clicking the following button:
 
-3. Optional: if you're familiar with `git`, you can instead clone this repository by opening a terminal and entering `git clone git@github.com:dlab-berkeley/Python-Data-Wrangling.git`.
+[![DataHub](https://img.shields.io/badge/launch-datahub-blue)](DATAHUB_LINK_HERE)
 
-## Run the code
-
-Now that you have all the required software and materials, you need to run the code:
-
-1. Open the Anaconda Navigator application. You should see the green snake logo appear on your screen. Note that this can take a few minutes to load up the first time. 
-
-2. Click the "Launch" button under "Jupyter Notebooks" and navigate through your file system to the `Python-Data-Visualization` folder you downloaded above.
-
-3. Open the `lessons` folder, and click `01_pandas.ipynb` to begin.
-
-4. Press Shift + Enter (or Ctrl + Enter) to run a cell.
-
-Note that all of the above steps can be run from the terminal, if you're familiar with how to interact with Anaconda in that fashion. However, using Anaconda Navigator is the easiest way to get started if this is your first time working with Anaconda.
-
-## Is Python not working on your laptop? 
-
-If you do not have Anaconda installed and the materials loaded on your workshop by the time it starts, we *strongly* recommend using the UC Berkeley Datahub to run the materials for these lessons. You can access the DataHub by clicking this button: 
-
-[![Datahub](https://img.shields.io/badge/launch-datahub-blue)](https://datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fdlab-berkeley%2FPython-Data-Wrangling-Pilot&urlpath=tree%2FPython-Data-Wrangling-Pilot%2F&branch=main)
-
-The DataHub downloads this repository, along with any necessary packages, and allows you to run the materials in a Jupyter notebook that is stored on UC Berkeley's servers. No installation is necessary from your end - you only need an internet browser and a CalNet ID to log in. By using the DataHub, you can save your work and come back to it at any time. When you want to return to your saved work, just go straight to [DataHub](https://datahub.berkeley.edu), sign in, and you click on the `Python-Data-Wrangling` folder.
+The DataHub downloads this repository, along with any necessary packages, and
+allows you to run the materials in an RStudio instance on UC Berkeley's servers.
+No installation is necessary from your end - you only need an internet browser
+and a CalNet ID to log in. By using the DataHub, you can save your work and come
+back to it at any time. When you want to return to your saved work, just go
+straight to the [D-Lab DataHub](https://dlab.datahub.berkeley.edu), sign in, and
+you click on the `[Workshop-Name]` folder.
 
 If you don't have a Berkeley CalNet ID, you can still run these lessons in the cloud, by clicking this button:
 
-[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/dlab-berkeley/Python-Data-Wrangling-Pilot/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](BINDER_LINK_HERE)
 
-Note that in Binder you cannot save your work.
+By using this button, however, you cannot save your work.
 
+
+## Run the Code
+
+Now that you have all the required software and materials, you need to run the code:
+
+Provide instructions on running the code, including how to load relevant software (RStudio, Jupyter Notebooks, etc.) and which file to open up. See other repositories for examples.
+
+Additionally, provide instructions on how to run code once it’s open (running Jupyter cells, RMarkdown cells, etc.).
 
 # Additional Resources
 
+Check out the following resources to learn more about deep learning from a language-agnostic viewpoint:
 
-* Massive open online courses
-    * [fast.ai - Practical Deep Learning for Coders](https://course.fast.ai/)
-    * [Kaggle Deep Learning](https://www.kaggle.com/learn/deep-learning)
-    * [Google Machine Learning Crash Course](https://developers.google.com/machine-learning/crash-course/)
-    * [See this](https://developers.google.com/machine-learning/crash-course/fitter/graph) sweet interactive learning rate tool
-    * [Google seedbank examples](https://tools.google.com/seedbank/seeds)
-    * [DeepLearning.ai](https://www.deeplearning.ai/)
+* [Dive into Deep Learning](https://d2l.ai/): This textbook provides a comprehensive introduction to deep learning, from the basic necessary math (calculus, linear algebra) to vanilla neural nets, CNNs, RNNs, transformers, LLMs, hyperparameter tuning, optimization, and more. **Highly** recommended.
 
-* Workshops
-    * [Nvidia's Modeling Time Series Data with Recurrent Neural Networks in Keras](https://courses.nvidia.com/courses/course-v1:DLI+L-HX-05+V1/about)
-
-* Stanford
-    * CS 20 - [Tensorflow for Deep Learning Research](http://web.stanford.edu/class/cs20si/syllabus.html)
-    * CS 230 - [Deep Learning](http://cs230.stanford.edu/)
-    * CS 231n - [Neural Networks for Visual Recognition](http://cs231n.github.io/)
-    * CS 224n - [Natural Language Processing with Deep Learning](http://web.stanford.edu/class/cs224n/)
-
-* Berkeley
-    * Machine Learning at Berkeley [ML@B](https://ml.berkeley.edu/)
-    * CS [189/289A](https://people.eecs.berkeley.edu/~jrs/189/)
-
-* UToronto CSC 321 - [Intro to Deep Learning](http://www.cs.toronto.edu/~rgrosse/courses/csc321_2018/)
-
-* Books
-    * F. Chollet and J.J. Allaire - [Deep Learning with Python](https://tanthiamhuat.files.wordpress.com/2018/03/deeplearningwithpython.pdf)
-    * Charniak E - [Introduction to Deep Learning](https://mitpress.mit.edu/books/introduction-deep-learning)
- 
 
 # About the UC Berkeley D-Lab
 
@@ -110,25 +86,19 @@ D-Lab works with Berkeley faculty, research staff, and students to advance data-
 
 Visit the [D-Lab homepage](https://dlab.berkeley.edu/) to learn more about us. You can view our [calendar](https://dlab.berkeley.edu/events/calendar) for upcoming events, learn about how to utilize our [consulting](https://dlab.berkeley.edu/consulting) and [data](https://dlab.berkeley.edu/data) services, and check out upcoming [workshops](https://dlab.berkeley.edu/events/workshops).
 
-# Other D-Lab Python Workshops
+# Other D-Lab [Language] Workshops
 
-Here are other Python workshops offered by the D-Lab:
+Here are other [Language] workshops offered by the D-Lab:
 
-## Introductory Workshops
+## Basic Competency
 
-* [Python Fundamentals](https://github.com/dlab-berkeley/Python-Fundamentals)
-* [Python Data Visualization](https://github.com/dlab-berkeley/Python-Data-Visualization)
-* [Python Geospatial Fundamentals](https://github.com/dlab-berkeley/Geospatial-Data-and-Mapping-in-Python)
+**Provide a list of workshops here.**
 
-## Advanced Workshops
+## Intermediate/Advanced Competency
 
-* [Python Web Scraping and APIs](https://github.com/dlab-berkeley/Python-Web-Scraping)
-* [Python Machine Learning](https://github.com/dlab-berkeley/Python-Machine-Learning)
-* [Python Text Analysis](https://github.com/dlab-berkeley/Python-Text-Analysis)
+**Provide a list of workshops here.**
 
 # Contributors
 
-* Anna Björklund
-* Sean Perez
-* Pratik Sachdeva
-
+**Provide a list of contributors here, with links to their webpages (D-Lab or
+private).**

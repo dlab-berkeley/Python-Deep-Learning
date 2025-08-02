@@ -6,7 +6,7 @@
 
 This repository contains the materials for D-Lab Python Deep Learning workshop. 
 
-### Prerequisites
+## Prerequisites
 We recommend attending [Python Fundamentals](https://github.com/dlab-berkeley/Python-Fundamentals) prior to this workshop. [Python Machine Learning](https://github.com/dlab-berkeley/Python-Machine-Learning) is also recommended as a supplemental course.
 
 Check out D-Lab’s [Workshop Catalog](https://dlab-berkeley.github.io/dlab-workshops/) to browse all workshops, see what’s running now, and review prerequisites.
